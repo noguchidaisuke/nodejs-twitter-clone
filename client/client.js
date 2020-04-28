@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const LoadingElement = document.querySelector('.loading')
 const mewsElement = document.querySelector('.mews')
-const API_URL = 'http://localhost:8080/mews'
+const API_URL =  window.location.hostname === 'localhost' ? 'http://localhost:8080/mews' : 'https://meower-api-o20y99rny.now.sh/mews'
 
 LoadingElement.style.display = "";
 
